@@ -1,0 +1,58 @@
+body {
+  background: url('bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.profile-container {
+  display: flex;
+  
+  padding: 100px;
+  width: 80%;
+ 
+  height: 20px;
+   
+    
+  margin: 50px auto;
+    justify-content: center;
+  align-items: center ;
+  gap: 5%;
+
+
+  
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+}
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;    /* จากแถวเป็นคอลัมน์ */
+    text-align: center;        /* จัดให้ข้อความอยู่กลางบนมือถือ */
+  }
+}
+.nav-link.active {
+  background-color: rgb(171, 31, 196) !important; 
+  
+}
+.nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgb(28, 28, 29);  
+  color: white;                          
+}
+.outset {border-style: outset;}
+.glow-text {
+  color: #ffffff;
+  text-shadow: 0 0 10px #d85ce4, 0 0 20px #d85ce4, 0 0 30px #00ffff;
+}
